@@ -1,0 +1,354 @@
+/* Start Global */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    width: 96%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 28px;
+}
+.nav ~ div {
+    margin-bottom: 80px;
+}
+.header ~ div .container{
+    padding: 0 50px;
+
+}
+
+.header ~div .button a:hover {
+    background-color:#025ca1;
+}
+/* End Global */
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #262626;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav .left ul{
+    width: 60%;
+} 
+
+
+.nav li {
+    display: inline-block;
+}
+.nav a:not(.a-img):hover {
+    border-bottom:1px solid black ;
+}
+.nav .left {
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
+}
+
+.nav .img {
+    width: 25%;
+    text-align: right;
+}
+.nav .img img {
+    width: 70%;
+}
+
+
+.nav .right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.nav .right .image img {
+    width: 30%;
+}
+.nav .right ul {
+    display: flex;
+    justify-content: end;
+}
+.nav .right ul li{
+    width: 25%;
+}
+
+.nav .micro {
+    position: relative;
+}
+.nav .micro::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid ;
+    border-color: transparent black black transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 20px;
+    top: 30%;
+}
+
+/* End Navbar */
+.header {
+    display: flex;
+    align-items: center;
+    background-color:rgb(198, 224, 255);
+    margin-bottom: 30px !important;
+
+}
+.header .left{
+    width: 40%;
+    padding-left: 100px;
+}
+
+.header .left h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.header .left p {
+    font-size: 18px;
+}
+.header .right {
+    width: 60%;
+    display: flex;
+}
+
+.header img{
+    width: 100%;
+}
+
+.header .button {
+    margin-top: 30px;
+}
+
+.header .button button{
+    background-color: #0067b8;
+    color: white;
+    padding: 10px 15px;
+    font-weight:500;
+    border: none;
+    margin-right: 15px;
+}
+
+.header .button button:hover{
+    box-shadow: 1px 1px 1px rgb(137, 137, 137);
+    background-color: #025ca1;
+}
+
+
+.header a:hover {
+    border-bottom: 3px black solid;
+}
+
+.header [class *=right] {
+    transition: all 0.3s;
+}
+.header a:hover i[class *=right] {
+    transform: translateX(4px);
+} 
+/* End Header */
+
+/* Start Icon */
+
+.icon .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon .container i {
+    margin-right: 27px;
+}
+
+.icon .container i[class $= pause]{
+    font-size: 18px;
+}
+
+.icon .container i[class $= circle]{
+    font-size: 9px;
+}
+/* End Icon */
+/* Start Apps */
+
+
+.apps .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    padding: 0 50px;
+    gap: 25px;
+}
+.apps .card {
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.13);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.apps .card h2 {
+    margin-bottom: 20px;
+}
+
+.apps img {
+    width: 100%;
+}
+
+.apps .info {
+    padding: 20px 20px 0;
+    flex: 1;
+}
+
+.apps .button {
+ padding: 20px;  
+ margin: 8px 0; 
+}
+
+.apps .button a, .section .button a{
+    background-color: #0067b8;
+    color: white;
+    padding: 10px 12px;
+}
+/* End Apps */
+
+/* Start Section */
+
+.section .container {
+    padding: 0 50px;
+}
+.section .container .parent{
+    background: url(../assets/Highlight-PC-SMB-OneNote_VP5-1596x600.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.section .right{
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    color: white;
+}
+.section .right h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.section .right p {
+    margin: 15px 0;
+}
+.section .right .button {
+    margin-top: 20px;
+}
+/* End Section */
+
+/* Start Business */
+.business .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    padding: 0 50px;
+    gap: 25px;
+}
+.business .card {
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.13);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.business .card h2 {
+    margin-bottom: 20px;
+}
+
+.business img {
+    width: 100%;
+}
+
+.business .info {
+    padding: 20px 20px 0;
+    flex: 1;
+}
+
+.business .button {
+ padding: 20px;  
+ margin: 8px 0; 
+}
+
+.business .button a{
+    background-color: #0067b8;
+    color: white;
+    padding: 10px 12px;
+}
+/* End Business */
+
+/* Start Follow */
+.follow .container{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.follow .container .social a{
+    margin-right: 25px;
+    font-size: 22px;
+}
+
+/* End Follow */
+
+/* Start Footer */
+
+.footer {
+    background-color: #f2f2f2;
+    margin-bottom: 0px !important;
+    padding: 40px 0;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+.footer .container {
+    display: flex;
+    column-gap: 100px;
+
+}
+
+.footer .container ul {
+    list-style: none;
+}
+
+.footer .container ul li, .footer .container h4 {
+    margin-bottom: 20px;
+}
+.footer .container h4 {
+    font-size: 15px;
+    color: #616161;
+    font-weight: 600;
+}
+.footer .container ul li {
+    font-weight: 100;
+    font-size: 11px;
+}
+
+/* End Footer */
